@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.scroll-up-button {
+  height: 50px;
+  width: 50px;
+  background-color: #fa7c7c;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add a transition for smoother visibility changes */
+}
+
+.scroll-up-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.scroll-up-button i {
+  font-size: 24px;
+}
+.nav-bar {
+  width: 100vw;
+  height: 6rem;
+  background-color: #fa7c7c;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+}
+.heading {
+  width: 25%;
+  padding: 5px;
+  margin: 1.25rem 1.875rem;
+  font-size: 1.875rem;
+}
+/* .heading img {
+  color: #e9ecef;
+  text-decoration: none;
+  margin: 0;
+  height: 75px;
+  width: 100px;
+} */
+.info {
+  width: 100%;
+  display: inline;
+  padding: 0.125rem;
+  margin: auto;
+}
+.info li {
+  display: inline;
+  font-size: 1.25rem;
+  padding: 0.3125rem;
+}
+.info li a {
+  color: #e9ecef;
+  text-decoration: none;
+}
+.info li a:hover {
+  color: rgb(204, 183, 183);
+  cursor: pointer;
+}
+.social-handles {
+  width: 25%;
+  display: flex;
+  padding: 0.625rem;
+  margin: auto;
+}
+.social-handles li {
+  display: inline;
+  margin: 0.625rem;
+}
+.social-handles li a {
+  color: #e9ecef;
+  text-decoration: none;
+}
+.social-handles li a :hover {
+  color: rgb(204, 183, 183);
+  cursor: pointer;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("intro-image.webp");
+  background-size: cover;
+}
+
+.home .introduction {
+  position: relative;
+  top: 60%; /* Adjust as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  z-index: 1;
+}
+
+.about {
+  background-color: antiquewhite;
+  height: 43.75rem;
+  width: 100%;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.875rem;
+  text-align: center;
+  padding-top: 3.125rem;
+}
+.content {
+  display: flex;
+  margin: 1.25rem;
+}
+.left img {
+  margin-left: 12.5rem;
+  height: 31.25rem;
+  width: 18.625rem;
+}
+.right {
+  height: 31.25rem;
+  width: 50rem;
+  margin-left: 12.5rem;
+}
+.this-is-me {
+  padding: 0.625rem;
+  margin-top: 3.125rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.information {
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  margin-top: 0.625rem;
+}
+.right a {
+  text-decoration: none;
+}
+.button {
+  background-color: #fadad7;
+  font-size: 1.5625rem;
+  margin-top: 1.25rem;
+  font-weight: bold;
+  height: 3.125rem;
+  width: 25rem;
+  text-align: center;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem;
+  color: black;
+  border: 2px solid black;
+}
+.button:hover {
+  background-color: #eec5c5;
+}
+.for_Individual {
+  height: 39.25rem;
+  width: 100%;
+  background-color: #f7fad7;
+}
+.for_Individual-information {
+  display: flex;
+  margin-left: 9.375rem;
+}
+.heading-title {
+  display: block-inline;
+  font-weight: bold;
+  padding: 0.625rem;
+  font-size: 1.5rem;
+  margin-left: 9.375rem;
+  margin-top: 5rem;
+  width: 44.75rem;
+  /* background-color: #eaebe0; */
+}
+.for_Individual-information p {
+  height: 20.25rem;
+  width: 44.75rem;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  /* background-color: #eaebe0; */
+}
+.individual-therapy-img {
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: -20px;
+}
+
+.individual-therapy-img img {
+  height: 60%;
+  width: 100%;
+  padding: 10px;
+}
+.for_Organizations {
+  background-color: antiquewhite;
+  height: 43.75rem;
+  width: 100%;
+}
+.all-therapy {
+  display: flex;
+  justify-content: space-around;
+}
+.therapy-1,
+.therapy-2 {
+  background-color: #fca6a6;
+  height: 23.75rem;
+  width: 34.375rem;
+  font-size: 0.9375rem;
+  margin-top: 5rem;
+  font-size: 1.25rem;
+  border-radius: 5%;
+}
+.therapy:hover,
+.therapy-2:hover {
+  background-color: #f0a8a8;
+}
+.therapy-title {
+  padding: 0.625rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.therapy-info p {
+  padding: 0.625rem;
+  margin: 0.625rem;
+  height: 31.25rem;
+  width: 31.25rem;
+}
+.contacts {
+  height: 15.625rem;
+  background-color: #f7fad7;
+}
+.email {
+  margin-top: 1.875rem;
+  margin: auto;
+  background-color: #fadad7;
+  height: 3.125rem;
+  width: 12.5rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.625rem;
+  border: 2px solid black;
+  justify-content: center;
+  border-radius: 10px;
+}
+.email:hover {
+  background-color: #eec5c5;
+  cursor: pointer;
+}
+.end {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #fa7c7c;
+}
+.email a {
+  text-decoration: none;
+  color: rgb(34, 23, 23);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f7fad7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fa7c7c;
+  border-radius: 3.125rem;
+}
+
+/* Handle on hover
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0e0004;
+  } */
